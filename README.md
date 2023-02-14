@@ -1,0 +1,1 @@
+# weeks should be enumerated 1 to 52 and we can reset our db

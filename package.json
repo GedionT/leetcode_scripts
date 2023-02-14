@@ -1,0 +1,20 @@
+{
+  "name": "leetstat",
+  "version": "1.0.0",
+  "description": "leetcode recent activity list",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "node --experimental-fetch --trace-warnings ./main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^4.13.0",
+    "mongoose": "^6.8.2",
+    "node-cron": "^3.0.2",
+    "pino": "^8.8.0"
+  }
+}
