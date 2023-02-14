@@ -10,7 +10,7 @@ import fs from "fs";
 
     const varibles = {
       username: username,
-      year: 2022,
+      year: 2023,
     };
 
     const graphqlQuery = {
@@ -157,7 +157,7 @@ import fs from "fs";
     "Surafel_",
     "Debisa",
     "Silvanus20",
-    "https://linkedin.com/in/abrham-tafere-2b53a3241",
+    "abrham_tafere",
     "Haweten_Girma",
     "bese21",
     "misganmoges03",
@@ -209,7 +209,7 @@ import fs from "fs";
     "MarufAbrar",
     "Fraol11",
     "Hanna_Tesfaye",
-    "etsubeta/",
+    "etsubeta",
     "godadsamuel",
     "abrahamgenetu",
     "hailedereje",
@@ -224,7 +224,7 @@ import fs from "fs";
     "ebissa",
     "Helawit",
     "bill7maye",
-    "Yoseph_Gebe,yehu",
+    "Yoseph_Gebeyehu",
     "birukCoder",
     "ab3lT",
     "petros_Beyene",
@@ -301,5 +301,5 @@ import fs from "fs";
   }
   console.table(result);
   // save all the result to a file called verified.txt
-  fs.writeFileSync("verified.txt", JSON.stringify(result));
+  fs.writeFileSync("v_active.txt", JSON.stringify(result));
 })();

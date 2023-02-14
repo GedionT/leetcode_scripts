@@ -1,3 +1,5 @@
+import fs from "fs";
+
 (async () => {
   const problemSolved = async (username) => {
     const endpoint = "https://leetcode.com/graphql";
@@ -156,7 +158,7 @@
     "Surafel_",
     "Debisa",
     "Silvanus20",
-    "https://linkedin.com/in/abrham-tafere-2b53a3241",
+    "abrham_tafere",
     "Haweten_Girma",
     "bese21",
     "misganmoges03",
@@ -208,7 +210,7 @@
     "MarufAbrar",
     "Fraol11",
     "Hanna_Tesfaye",
-    "etsubeta/",
+    "etsubeta",
     "godadsamuel",
     "abrahamgenetu",
     "hailedereje",
@@ -223,7 +225,7 @@
     "ebissa",
     "Helawit",
     "bill7maye",
-    "Yoseph_Gebe,yehu",
+    "Yoseph_Gebeyehu",
     "birukCoder",
     "ab3lT",
     "petros_Beyene",
@@ -293,15 +295,13 @@
   ];
 
   const result = [];
-  let idx = 0;
   for (let username of listOfUsernames) {
     console.log("username:", username, typeof username);
     let count = await problemSolved(username);
-    result.push([idx, count]);
-    idx += 1;
-    console.table(result);
+    result.push(count);
   }
 
+  console.table(result);
   // save all the result to a file called verified.txt
-  fs.writeFileSync("verified.txt", JSON.stringify(result));
+  fs.writeFileSync("v_solved.txt", JSON.stringify(result));
 })();
